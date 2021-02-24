@@ -39,7 +39,7 @@ class Song
         return song
       end
     end
-    return false
+    return nil
   end
   
   def self.find_or_create_by_name(name)
@@ -49,7 +49,6 @@ class Song
       return song
     else
       song = self.create_by_name(name)
-      binding.pry
       return song 
     end
     
