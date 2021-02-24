@@ -65,5 +65,7 @@ class Song
     
     new_song = create_by_name(song_arr[1])
     new_song.artist_name = song_arr[0]
+    
+    return new_song
   end
 end
