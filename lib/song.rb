@@ -51,8 +51,11 @@ class Song
       song = self.create_by_name(name)
       return song 
     end
-    
-   
-      
+  end
+  
+  def self.alphabetical
+    self.all.sort_by do |a, b|
+      a.name > b.name
+    end
   end
 end
