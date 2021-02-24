@@ -48,7 +48,7 @@ class Song
     if song 
       return song
     else
-      song = self.create_by_name(name)
+      song = create_by_name(name)
       binding.pry
       return song 
     end
